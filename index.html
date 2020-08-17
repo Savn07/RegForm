@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Aicon.ico">
+</head>
+
+<body>
+    <div class="new">
+        <div class="container">
+            <form>
+                <h1 style="text-align: center;">Welcome to Prime Video</h1>
+                <p style="text-align: center;">Create your free Account here..!</p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/amazon.jpg"
+                    alt="Amazon-Prime">
+                <br>
+
+                <label for="Name"><b>Name : </b></label>
+                <input type="text" placeholder="First name" name="fname" required>&nbsp; <input type="text"
+                    placeholder="Last name" name="lname" required>
+                <br>
+
+                <label for="email"><b>Email : </b></label>
+                <input type="text" placeholder="Enter Email" name="email" size="45" required>
+                <br>
+
+                <label for="psw"><b>Password : </b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+
+                <label for="psw-repeat"><b>Confirm Password : </b></label>
+                <input type="password" placeholder="Re-Enter Password" name="psw-repeat" required>
+                <br>
+
+                <label for="address"><b>Address : </b></label> <br>
+                <textarea cols="50" rows="5" placeholder="Current Address" value="address" required>
+            </textarea>
+                <br>
+
+                <label><b>Gender : </b></label>
+                <input type="radio" value="Male" name="gender" checked required> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <br>
+
+                <label><b>Phone no : </b></label>
+                <input type="text" name="country code" placeholder="Country Code" value="+91" size="2">
+                <input type="text" name="phone" placeholder="Mobile no." size="20" required>
+                <br>
+
+                <label><b>Country : </b></label>
+                <select name="country" required>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                </select>
+                <br>
+
+                <label for="dob"> <b>D.O.B : </b> </label>
+                <input type="date" name="dob" required>
+                <br>
+
+                <label for="pic"><b>Upload your Profile Pic : </b></label>
+                <input type="file" name="pic" required>
+                <br>
+
+                <div class="card">
+                    <label for="payment"><b>Payment Method : </b></label> <br> <br>
+                    <table style="border: solid 1.5px; padding: 14px;">
+                        <tr>
+                            <td>
+                                <h4><input type="radio" name="card" value="yescard" required> Accepted Cards</h4>
+                            </td>
+                            <td><img src="img/payment.png" class="imgpay" alt="Payment"></td>
+                        </tr>
+                        <tr>
+                            <td>Name on Card</td>
+                            <td><input type="text" style="border:solid 1px; padding: 10px; margin: 0;" name="cardname"
+                                    placeholder="John more doe"></td>
+                        </tr>
+                        <tr>
+                            <td>Card Number</td>
+                            <td><input type="text" style="border:solid 1px; padding: 10px; margin: 0;" name="cardnum"
+                                    placeholder="0000-0000-0000-0000"></td>
+                        </tr>
+                        <tr>
+                            <td>Expires on</td>
+                            <td><input type="text" style="border:solid 1px; padding: 10px; margin: 0;" name="month"
+                                    placeholder="month" size=2>
+                                <input type="text" style="border:solid 1px; padding: 10px; margin: 0;" name="year"
+                                    placeholder="year" size=4></td>
+                            <td>CCV</td>
+                            <td><input type="text" style="border:solid 1px; padding: 10px; margin: 0;" name="ccv"
+                                    placeholder="ccv" size=3></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+
+                <div class="signin">
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.
+                    </p>
+                </div>
+                <button type="submit" class="registerbtn">Register</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div style="background-color: #b2ebf2;">
+        <hr>
+        <div style="background-color: white; padding: 8px;">
+            <center>Savn © 2020 All rights reserved</center>
+        </div>
+        <hr>
+    </div>
+
+</body>
+
+</html>
